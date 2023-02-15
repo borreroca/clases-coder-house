@@ -1,0 +1,38 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/mapas";
+@import "../base/extend";
+@import "../base/mixins";
+@import "../base/condicionales";
+/* Estilos de header */
+
+// Operaciones matematicas, sumas, restas, divisiones, multiplicaciones, calculos combinados...
+.header-nosotros{
+    @include condicion (pink)
+}
+
+// Utilizando listas
+
+main{
+    @include flex;
+    background-color: nth($colores, 2);
+    color: nth($colores,4 );
+    .boton-standard{
+        background-color: map-get($standard , bg-standard );
+    }
+
+    // estilos de div
+
+    div{
+        @extend %botones;
+    }
+}
+
+footer{
+    background-color: tomato;
+    .redes{
+        @include flex;
+        font-size: 2rem;
+        @extend %botones;
+    }
+}

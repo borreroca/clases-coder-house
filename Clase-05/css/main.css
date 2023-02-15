@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor{
+    background-color: tomato;
+    display: flex;
+    height: 500px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijos{
+    background-color: wheat;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+}
+
+/* estilos practica */
+/* Estilos generales */
+body{
+    background-color: tomato;
+}
+/* Estilo header */
+header{
+    background-color: rgb(210, 108, 90);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+header nav ul li {
+    background-color: rgb(105, 105, 205);
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+/* Estilos main */
+
+main{
+    padding: 30px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.noticia-uno, .noticia-dos{
+    width: 500px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.noticia-uno h2, .noticia-dos h2 {
+    margin-bottom: 30px;
+}
+
+/* Estilos de footer  */
+
+footer {
+    text-align: center;
+}
+

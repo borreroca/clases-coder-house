@@ -1,0 +1,73 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* Estilo de productos */
+
+.producto{
+    background-color:tomato;
+    padding: 50px 100px 10px 70px;
+    margin-bottom: 100px;
+}
+
+/* Estilos de segmento */
+
+.segmento{
+    background-color:pink;
+    padding: 50px 100px 10px 70px;
+}
+
+/* Estilos de padre */
+
+.padre{
+    background-color: yellowgreen;
+    padding: 20px;
+}
+
+/* Estilos de hijos */
+
+.padre__hijo{
+    background-color: tomato;
+    width: 150px;
+    height: 200px;
+    margin: 50px;
+    display: inline-block;
+}
+
+
+.item-relative{
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+
+.item-absolute{
+    position: absolute;
+    top: 100px;
+    right: 100px;
+}
+
+.item-fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/* estilos del menu*/
+
+.menu{
+    background-color: coral;
+    position: sticky;
+    top:0;
+}
+
+.menu ul li{
+    background-color: chocolate;
+    margin: 10px;
+    padding: 10px;
+
+    display: inline-block ;
+}

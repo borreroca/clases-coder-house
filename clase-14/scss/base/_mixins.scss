@@ -1,0 +1,23 @@
+// mixins
+
+// mixins sin parametros
+
+@mixin flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+// mixins con parametros
+
+@mixin medidas($ancho, $alto){ 
+    width: $ancho;
+    height: $alto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}

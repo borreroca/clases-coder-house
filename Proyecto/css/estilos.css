@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos header  */
+
+header{
+    background-color: #451013;
+    font-family: 'Poppins', sans-serif;
+    width: 1920px;
+    height: 120px;
+    border-bottom: solid 2px;
+}
+
+header nav {
+    display: inline-block;
+}
+
+.logo{
+    font-size: 60px;
+    padding: 10px;
+    margin: 10px 200px 0px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #AD9F9F;
+}
+
+.principalNavBar{
+    list-style: none;
+    font-size: 30px;
+}
+
+.navBarOption {
+    background-color: #6969CD;
+    padding: 10px;
+    margin-right: 20px;
+    position: relative;
+    left: 180px;
+    bottom: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.paginaActiva{
+    background-color: #9B9BF1;
+}
+
+.navBarOption a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos main del index */
+
+main{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1D1F47;
+    color: #AD9F9F;
+    width: 1920px;
+    height: 1300px;
+}
+
+.tituloPagina {
+    font-size: 35px;
+    padding: 30px;
+    margin: 30px 660px;
+    display: inline-block;
+}
+
+section{
+    position: relative;
+    left: 300px;
+}
+
+h3{
+    font-size: 25px;
+    padding: 30px;
+}
+
+section div{
+    display: inline-block;
+}
+
+section div p{
+    font-size: 20px;
+    text-align: justify;
+    width: 400px;
+    padding: 20px 60px;
+    position: relative;
+    bottom: 40px;
+}
+
+.imgSection1 {
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 30px;
+}
+
+.imgSection2{
+    width: 700px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 50px;
+}
+
+/* Estilos main de libros */
+
+.mainLibros{
+    height: 1500px;
+}
+
+.citaBajoTitulo{
+    font-size: 20px;
+    margin: 0px 500px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.subtituloCategoria{
+    font-size: 35px;
+    padding: 30px;
+    margin: 30px 660px;
+    display: inline-block;
+}
+
+.contenedorTexto{
+    height: 1100px;
+    width: 500px;
+}
+
+.tituloLibro{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.autorLibro{
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+
+.libroDos{
+    position: relative;
+    bottom: 30px;
+    left: 150px;
+}
+
+.libroTres{
+    position: relative;
+    bottom: 55px;
+    left: 320px;
+}
+
+.seccionCategoria{
+    left: 0px;
+}
+
+.imgLibro{
+    width: 250px;
+    height: 450px;
+    
+}
+
+.imgUno{
+    position: relative;
+    left: 130px;
+}
+
+.imgDos{
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+
+.imgTres{
+    position: relative;
+    top: 50px;
+    left: 130px;
+}
+
+/* Estilos main de videojuegos */
+
+.mainVideojuegos{
+    height: 1100px;
+}
+
+.contenedorTexto{
+    height: 700px;
+    width: 400px;
+    text-align: ce;
+}
+
+.tituloJuego{
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.fechaSalida{
+    font-size: 18px;
+    text-align: center;
+}
+
+.juegoDos{
+    position: relative;
+    bottom: 30px;
+    left: 80px;
+}
+
+.juegoTres{
+    position: relative;
+    bottom: 55px;
+    left: 150px;
+}
+
+.juegoCuatro{
+    position: relative;
+    bottom: 5px;
+    left: 300px;
+}
+
+.seccionCategoria{
+    left: 0px;
+}
+
+.imgJuego{
+    width: 250px;
+    height: 450px;
+}
+
+.imgJUno{
+    position: relative;
+    left: 130px;
+}
+
+.imgJDos{
+    position: relative;
+    top: 30px;
+    left: 130px;
+}
+
+.imgJTres{
+    position: relative;
+    top: 50px;
+    left: 130px;
+}
+
+/* Estilos main de anime */
+.mainAnime{
+    height: 2500px;
+}
+.seccionAnime{
+    width: 1300px;
+    border: solid 1px gray;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.imgAnime{
+    width: 550px;
+    height: 350px;
+}
+
+/* estilos contacto  */
+
+.mainContacto{
+    height: 1000px;
+}
+
+.formularioContacto{
+    width: 800px;
+    font-size: 25px;
+    margin: 100px 0px 0px 500px;
+}
+
+/* estilos footer  */
+
+footer{
+    font-family: 'Poppins', sans-serif;
+    background-color: #024270;
+    color: #AD9F9F;
+    width: 1920px;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+

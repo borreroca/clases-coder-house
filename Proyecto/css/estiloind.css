@@ -1,0 +1,346 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Diseño para mobile del index  */
+
+body{
+  background-color: #eceef3;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(99deg, rgba(251,251,251,1) 5%, rgba(199,201,201,0.7063200280112045) 100%);
+}
+
+header nav div .logo{
+  font-size: 28px;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 2rem;
+}
+
+main .tituloPagina{
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+main .subtituloPrincipal{
+  padding: 1rem;
+}
+
+main p{
+  padding: 0.4rem;
+  text-align: justify;
+}
+
+main img {
+  width: 90%;
+  margin: 1rem 0rem;
+}
+
+section{
+  display: block;
+  display: flex;
+  background-color: #bee0f1;
+  margin-top: 2rem;
+}
+
+section .linkPages{
+  text-decoration: none;
+  background-color: #171126;
+}
+
+section .linkPages .cardLink{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: antiquewhite;
+    gap: 0.5rem;
+    transition:all 0.5s;
+}
+
+section .linkPages .cardLink p,
+section .linkPages .cardLink h3{
+  display: none;
+}
+
+section .linkPages .cardLink .borde{
+  width: 40%;
+  align-items: center;
+  border-radius: 50%;
+  border: rgb(118, 107, 107) solid 0.2rem;
+  margin: 1rem;
+  background-color: #e68080;
+}
+
+section .linkPages .cardLink .borde .iconLink {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+section .linkPages:hover{
+  background-color: #e68080;
+}
+
+section .linkPages:hover .cardLink .borde{
+  background-color: #171126;
+  transition: 5seg;
+}
+
+section .linkPages:hover .cardLink .borde .iconLink{
+  filter: invert(0.8);
+  transition: all 0.85s;
+  transform: rotateY(360deg);
+}
+
+footer{
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+/* Responsive para tablet del index */
+
+@media screen and (min-width:600px){
+  
+  header nav{
+    background-color: aqua;
+  }
+
+  header nav div .logo{
+    font-size: 38px;
+  }
+
+  main div {
+    display: flex;
+    gap: 1rem;
+  }
+
+  main img {
+    width: 80%;
+  }
+
+  /* estilos de section */
+
+  section .linkPages .cardLink h3{
+  display: block;
+  }
+
+  section .linkPages .cardLink .borde{
+    margin: 1rem 0rem 0rem 0rem;
+  }
+
+  @keyframes animacion-div {
+      0%{
+          transform: scale(0.5);
+      }
+      50%{
+          transform: scale(0.8);
+      }
+      100%{
+          transform: scale(0.5);
+      }
+  }
+}
+
+@media screen and (min-width:992px){
+  
+  header nav{
+    background-color: pink;
+  }
+
+  main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "h1 h1"
+        "subtituloUno subtituloUno"
+        "textoUno imgParrafo1"
+        "subtituloDos subtituloDos"
+        "textoDos imgParrafo2";
+
+    justify-content: center;
+    justify-items: center;
+  }
+
+  main div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main .tituloPagina{
+    grid-area: h1;
+  }
+
+  main .subtituloUno{
+    grid-area: subtituloUno;
+  }
+
+  main .textoUno{
+    grid-area: textoUno;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  main .imgParrafo1{
+    grid-area: imgParrafo1;
+  }
+
+  main .subtituloDos{
+    grid-area: subtituloDos;
+  }
+
+  main .textoDos{
+    grid-area: textoDos;
+    width: 70%;
+    font-size: 18px;
+  }
+
+  main .imgParrafo2{
+    grid-area: imgParrafo2;
+  }
+
+  main .subtituloPrincipal{
+    margin: 2rem 0rem;
+  }
+
+  section .linkPages .cardLink p{
+    display: block;
+  }
+
+  section .linkPages .cardLink .borde{
+    width: 25%;
+    align-items: center;
+    border-radius: 50%;
+    border: rgb(118, 107, 107) solid 0.2rem;
+    margin-top: 1rem;
+    background-color: #e68080;
+  }
+  
+  /* .threeholder {
+    position: relative;
+    margin-top: 0px;
+    width: 800px;
+    height:280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .threeone {
+    display: inline-block;
+    width: 33.33333333333%;
+    height: 100%;
+    background: #363636;
+    border-bottom: 15px solid #f5cb22;
+    text-align: center;
+    transition: all 2s;
+  }
+  .threetwo {
+    display: inline-block;
+    width: 33.333333333%;
+    height: 100%;
+    background: #333333;
+    border-bottom: 15px solid #f5cb22;
+    transition: all 0.25s;
+  }
+  .threethree {
+    display: inline-block;
+    width: 33.333333333%;
+    height: 100%;
+    background: #363636;
+    border-bottom: 15px solid #f5cb22;
+    transition: all 2s;
+  }
+  .threeone:hover {
+    background: #f52222;
+  }
+  .threeone:hover .circlepic {
+    background: #5c5c5c;
+  }
+  .threeone:hover .circleborder{
+      background: #333333;
+  }
+  .threeone:hover svg{
+    fill:#f5cb22;
+  }
+  .threeholder h4 {
+    width: 200px;
+    text-align: center;
+    font-size: 13px;
+    margin-left: -55px;
+    font-weight: bold;
+    margin-top: 45px;
+    text-align: center;
+    color: white;
+  }
+  .threeholder p {
+    display: inline-block;
+    width:200px;
+    text-align: center;
+    margin-left: -55px;
+    margin-top: 20px;
+    font-size: 12px;
+    color:#8a8a8a;
+    letter-spacing: 1px;
+  }
+  .threeone:hover h4 {
+    color: black;
+  }
+  .threetwo:hover h4 {
+    color: black;
+  }
+  .threethree:hover h4 {
+    color: black;
+  }
+  .threeone:hover svg, .threetwo:hover svg, .threethree:hover svg {
+    transition: all 0.65s;
+    transform: rotateY(360deg);
+  }
+  .threetwo:hover {
+    background: #f5cb22;
+  }
+  .threetwo:hover .circleborder{
+      background: #333333;
+  }
+  .threetwo:hover svg{
+    fill:#f5cb22;
+  }
+  .threethree:hover {
+    background: #f5cb22;
+  }
+  .threethree:hover .circleborder{
+      background: #333333;
+  }
+  .threethree:hover svg{
+    fill:#f5cb22;
+  }
+  .circleborder {
+    position: absolute;
+    top: 30px;
+    width: 90px;
+    height: 90px;
+    background: #f5cb22;
+    margin-left: 88.33333px;
+    border-radius: 50%;
+  }
+  .circlepic {
+    position:absolute;
+    top:-10px;
+    margin-top: 30px;
+    width: 110px;
+    height: 110px;
+    background: #5c5c5c;
+    margin-left: 78.33333px;
+    border-radius: 50%;
+  } */
+
+}

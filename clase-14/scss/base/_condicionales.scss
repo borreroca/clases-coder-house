@@ -1,0 +1,13 @@
+@mixin condicion($tonos){
+    background-color: $tonos;
+
+    // condicion if y else
+
+    @if $tonos == orange{
+        border: 2px solid black;
+    }@else{
+        border: 3px solid pink;
+        font-size: 3rem;
+        background-color: red;
+    }
+}

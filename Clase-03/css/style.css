@@ -1,0 +1,42 @@
+body{
+    background-image: url("../img/homero-calor.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section h2 {
+    color: green;
+}
+
+main h2.colorRojo {
+    color: red;
+}
+
+main h2#subtituloTres {
+    color:orange;
+}
+
+.intentoUno{
+    color:brown
+}
+
+#intentoDos{
+    color:blueviolet;
+}
+
+header {
+    background-color: sandybrown;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul li {
+    list-style: none;
+    background-color: brown;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}

@@ -1,0 +1,16 @@
+/* comentario en sass y css */
+/* estilos de nosotros */
+.headerNosotros {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center; }
+  .headerNosotros h1 {
+    color: black;
+    text-transform: uppercase; }
+  .headerNosotros nav {
+    background-color: violet; }
+    .headerNosotros nav ul {
+      display: flex;
+      justify-content: center; }
+      .headerNosotros nav ul li {
+        color: white; }

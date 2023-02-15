@@ -1,0 +1,22 @@
+@import "variables";
+
+// mapas para botones
+
+// dos tipos de usuarios
+
+// Standard
+
+$standard: (
+    color-standard: rgb(21, 18, 18),
+    bg-standard: rgb(84, 70, 70),
+    border-standard:1px solid black,
+    medida-standard: $medida-principal,
+);
+
+// Premium
+$premium: (
+    color-premium: rgb(61, 29, 29),
+    bg-premium: rgb(149, 141, 141),
+    border-premium:1px solid rgb(240, 97, 97),
+    medida-premium: $medida-principal /2,
+);
